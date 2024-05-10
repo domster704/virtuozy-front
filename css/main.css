@@ -187,6 +187,10 @@
     background: var(--main-color);
 }
 
+.course:hover *{
+    color: white;
+}
+
 .course:hover .button {
     background: white;
     color: black;
