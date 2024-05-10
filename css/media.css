@@ -187,6 +187,10 @@
         display: none;
     }
 
+    header nav * {
+        color: #FAF9F9;
+    }
+
     .header_menu_burger {
         position: absolute;
         right: 4em;

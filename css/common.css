@@ -20,6 +20,10 @@ html {
     --main-color: #439eeb;
 }
 
+html {
+    background: #FAF9F9;
+}
+
 button {
     border: none;
     outline: none;
