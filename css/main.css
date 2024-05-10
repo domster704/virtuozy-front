@@ -1,0 +1,365 @@
+/*Секция top_about*/
+.top_about {
+    --img-top-left-margin: 3.25em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 6.25em;
+    margin-top: calc(2.5em + var(--img-top-left-margin));
+}
+
+.top_about_left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    justify-content: center;
+}
+
+.top_about_left h1 {
+    font-weight: 500;
+    font-size: 2.5em;
+    color: #000;
+}
+
+.top_about_left p {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #151515;
+}
+
+.top_about_left .button {
+    margin-top: 2em;
+    font-size: 1.5em;
+}
+
+.top_about_right {
+    margin-left: 4em;
+    display: flex;
+    justify-content: end;
+}
+
+.top_about_right_img_block {
+    width: max-content;
+}
+
+.top_about_right img {
+    max-width: 41em;
+    width: clamp(16em, 41vw, 41em);
+    aspect-ratio: 553 / 556;
+    height: auto;
+    z-index: 10;
+}
+
+.top_about_right_img_block::before {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--img-top-left-margin));
+    left: calc(-1 * var(--img-top-left-margin));
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+}
+
+/*Конец секции top_about*/
+
+/*Секция gallery*/
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25vw;
+    margin-top: 8em;
+}
+
+.gallery_row {
+    overflow-x: scroll;
+    display: flex;
+    gap: 1.25vw;
+}
+
+.gallery_row img {
+    object-fit: cover;
+    aspect-ratio: 24.69 / 17.69;
+    width: 24.7em;
+    height: auto;
+}
+
+.gallery_row::-webkit-scrollbar {
+    display: none;
+}
+
+/*Конец секции gallery*/
+
+/*Секция we_the_best*/
+.we_the_best_block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 2em;
+    background-image: url("../assets/img/quote_top.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.we_the_best_block::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 2em;
+    background-image: url("../assets/img/quote_bottom.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.we_the_best_block {
+    aspect-ratio: 51.25 / 20.44;
+    width: min(51.25em, 80vw);
+    height: auto;
+
+    margin: 8em auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.we_the_best_block_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    margin: 0 4em;
+}
+
+.we_the_best_block_content p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/*Конец секции we_the_best*/
+
+/*Секция course*/
+.course_block {
+    margin-top: 8em;
+}
+
+.course_block {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+
+    padding: 0 6.25em;
+    margin: 0 auto;
+}
+
+.course_block h2 {
+    align-self: center;
+}
+
+.course_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    border: 3px solid var(--main-color);
+
+    padding: 5.625em 2.5em;
+    cursor: pointer;
+}
+
+.course:hover {
+    background: var(--main-color);
+}
+
+.course:hover .button {
+    background: white;
+    color: black;
+}
+
+.course:hover .button:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.course img {
+    aspect-ratio: 1 / 1;
+    width: 11.62em;
+    height: auto;
+    margin-bottom: 3.75em;
+}
+
+.course_title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+}
+
+.course_description {
+    font-weight: 500;
+    font-size: 0.94rem;
+    text-align: center;
+    color: #3b3b3b;
+}
+
+.course .button {
+    margin-top: 1.75em;
+}
+/*Конец секции course*/
+
+/*Секция contacts*/
+.contacts {
+    max-width: min(54em, 53vw);
+    margin: 5.75em auto 8em auto;
+}
+
+.contacts,
+.contacts_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts_about {
+    gap: 1.5em;
+    text-align: center;
+    margin-bottom: 4.375em;
+}
+
+.contacts_about p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 138%;
+    text-align: center;
+    color: #3b3b3b;
+}
+
+.contacts hr {
+    width: 38%;
+}
+
+.contacts_links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 3.75em;
+}
+
+.contacts_links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.contacts_links a p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.contacts_links_img {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+    width: 5em;
+    height: auto;
+}
+
+.contacts_links_img_block {
+    background: var(--main-color);
+    border-radius: 50%;
+    padding: 1.125em;
+}
+
+/*Конец секции contacts*/
+
+/*Попап окно для галереи*/
+.popup {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.popup_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100001;
+}
+
+.popup_close,
+.arrow {
+    position: absolute;
+    z-index: 100002;
+
+    background: rgba(101, 95, 175, 0.8);
+    color: white;
+
+    font-size: 2em;
+    line-height: 100%;
+    text-align: center;
+
+    cursor: pointer;
+    user-select: none;
+    padding: 0.125em;
+}
+
+.arrow#arrow_left {
+    top: 50%;
+    left: 0.75em;
+}
+
+.arrow#arrow_right {
+    top: 50%;
+    right: 0.75em;
+}
+
+.popup_close {
+    top: 0.75em;
+    right: 0.75em;
+}
+
+.popup_content #modal_image {
+    aspect-ratio: 916 / 654;
+    width: 57.25rem;
+    height: auto;
+}
+
+/*Конец попап окна для галереи*/

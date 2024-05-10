@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5em 6.25em 1.25em 6.25em;
+
+    /*position: sticky;*/
+    /*top: 0;*/
+    /*z-index: 999;*/
+    /*background: white;*/
+}
+
+header button:not(.button) {
+    background: transparent;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 2.12em;
+}
+
+.header_menu_burger {
+    display: none;
+}
+
+.header_menu_burger .header_menu_burger_img {
+    display: block;
+    background-image: url("../assets/img/menu_burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.5em;
+    height: 1.25em;
+}
+
+.header_logo_block {
+    /*background: var(--main-color);;*/
+    /*padding: 0.625em;*/
+}
+
+.header_logo_block img {
+    --width: 8.12rem;
+    --height: 9.69rem;
+    min-width: var(--width);
+    min-height: var(--height);
+    width: var(--width);
+    height: var(--height);
+}
