@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: max(1em, 1vw);
 }
 
 :root {

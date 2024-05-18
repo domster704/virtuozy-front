@@ -37,10 +37,6 @@ footer {
     color: var(--text-on-blue);
 }
 
-.contacts hr {
-    width: 38%;
-}
-
 .contacts_links {
     display: flex;
     justify-content: space-between;
@@ -71,5 +67,4 @@ footer {
     width: 9.375em;
     height: auto;
 }
-
 /*Конец секции contacts*/

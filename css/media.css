@@ -1,3 +1,22 @@
+@media screen and (max-width: 1505px) {
+    .about_us_content img {
+        transform: translateX(10vw);
+    }
+}
+
+@media screen and (max-width: 1333px) {
+    .about_us_content img {
+        transform: translateX(15vw);
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .about_us_content img {
+        width: 28.25em;
+        transform: translateX(20vw);
+    }
+}
+
 @media screen and (max-width: 1051px) {
     .top_about_left :is(p, .button) {
         font-size: 1.25rem;
@@ -24,17 +43,19 @@
         font-size: 2.25rem;
     }
 
-    .course_block {
-        margin-top: 5.25em;
-    }
-
     .gallery_row img {
         width: 22.12em;
         height: auto;
     }
 
     .course_block {
-        padding: 0 4em;
+        margin-top: 5.25em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .course_block h2 {
+        font-size: 2.5rem;
     }
 
     .course_grid {
@@ -42,12 +63,16 @@
     }
 
     .course {
-        padding: 3em 2.5em;
+        padding: 0.75em;
     }
 
     .course img {
         width: 11.25em;
         margin-bottom: 1.75em;
+    }
+
+    .about_us {
+        padding-bottom: 0;
     }
 
     .contacts {
@@ -87,9 +112,6 @@
         grid-template-columns: 1fr;
     }
 
-    .about_us {
-    }
-
     .top_about_left {
         align-items: center;
         text-align: center;
@@ -108,12 +130,26 @@
         margin-top: 1em;
     }
 
+    .about_us_content {
+        grid-template-columns: 1fr;
+    }
+
+    .about_us_content img {
+        position: relative;
+        transform: unset;
+        width: 100%;
+    }
+
+    .about_us_content_description {
+        margin: 2em 0 4em 0;
+    }
+
     .course_block {
-        padding: 0 1.25em;
+
     }
 
     .course {
-        padding: 1.75em 0.5em;
+        padding: 0.5em;
     }
 
     footer {
@@ -215,13 +251,21 @@
         margin-top: 4em;
     }
 
+    .about_us h2 {
+        margin: 0 auto;
+        font-size: 1.75rem;
+    }
+
     .about_us_content {
         gap: 0.875em;
         margin: 0;
+        align-items: center;
+        justify-content: center;
     }
 
     .about_us_content p {
         font-size: 0.94em;
+        text-align: center;
     }
 
     .gallery_row img {
@@ -229,22 +273,31 @@
         height: auto;
     }
 
+    .course_block h2 {
+        font-size: 1.75rem;
+        margin: 0 auto;
+    }
+
     .course_grid {
         gap: 0.75em;
     }
 
+    .course {
+        width: 19.38em;
+        scroll-snap-align: start;
+    }
+
     .course img {
-        width: 4.88em;
-        margin-bottom: 0;
+        width: 7.88em;
+        margin-bottom: 0.75em;
         gap: 0.5em;
     }
 
-    .course_title {
-        font-size: 0.75rem;
-    }
-
-    .course_description {
-        font-size: 0.5rem;
+    .course_grid {
+        /*grid-template-columns: 1fr;*/
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
     }
 
     .course .button {
