@@ -1,3 +1,9 @@
+@media screen and (max-width: 1601px) {
+    .button {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
 @media screen and (max-width: 1505px) {
     .about_us_content img {
         transform: translateX(10vw);
