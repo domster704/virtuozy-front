@@ -4,7 +4,7 @@ class Slider {
      * @param direction {number} - 1 for bottom/right, -1 for top/left
      * @param [timeout=1000] {number}
      */
-    constructor(sliderContainer, direction, timeout = 2500) {
+    constructor(sliderContainer, direction, timeout = 1500) {
         this.sliderContainer = sliderContainer;
         this.direction = direction;
         this.timeout = timeout;
@@ -60,10 +60,10 @@ let sliderLeft;
 window.addEventListener('load', () => {
     const galleySlider = document.getElementById('gallerySlider');
     const galleryRowsRight = galleySlider.querySelector('.gallery_row_right');
-    const galleryRowsLeft = galleySlider.querySelector('.gallery_row_left');
+    // const galleryRowsLeft = galleySlider.querySelector('.gallery_row_left');
 
     sliderRight = new Slider(galleryRowsRight, 1);
-    sliderLeft = new Slider(galleryRowsLeft, -1);
+    // sliderLeft = new Slider(galleryRowsLeft, -1);
 });
 
 window.addEventListener('resize', () => {

@@ -21,8 +21,26 @@ html {
     --accent: #44c8f7;
 }
 
+:root {
+    --fce883-3-paints: #fce883;
+    --text-1: #3b3b3b;
+    --white: #fff;
+    --text-2: #3b3b3b;
+    --text-button: #0a78d6;
+    --card: #1c96ff;
+    --button: #fff;
+    --text-on-white: #424242;
+    --text-on-blue: #fff;
+    --blue-text: #1c96ff;
+    --text-main: #000;
+    --blue-burger: #035ba7;
+    --hover-card: #fff;
+    --hover-text: #818181;
+    --hover-blue-button: #4aabff;
+}
+
 html {
-    background: #FAF9F9;
+    background: var(--white);;
 }
 
 button {
@@ -32,9 +50,20 @@ button {
 }
 
 h2 {
+    font-family: var(--font-family);
     font-weight: 500;
-    font-size: 2.5rem;
-    color: #000;
+    font-size: 3rem;
+    color: var(--text-on-white);
+}
+
+h2.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -0.5rem;
+    height: 1px;
+    background: #5c5c5c;
 }
 
 a {
@@ -43,14 +72,28 @@ a {
 }
 
 .button {
-    background: #0a78d6;
+    background: var(--white);
     max-width: max-content;
-    padding: 0.5em 1em;
+    padding: 12px 24px;
     font-weight: 600;
     font-size: 1em;
-    color: #fff;
+    border-radius: 0.75em;
+    color: var(--text-on-white);
 }
 
 .button:hover {
-    background: #44c8f7;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 2px 12px 12px 0 rgba(0, 0, 0, 0.09), 4px 26px 16px 0 rgba(0, 0, 0, 0.05), 7px 47px 19px 0 rgba(0, 0, 0, 0.01), 11px 73px 21px 0 rgba(0, 0, 0, 0);
+    background: var(--white);
+    color: var(--hover-text);
+}
+
+.wrapper {
+    padding-left: 7.75em;
+    padding-right: 7.75em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blue_text {
+    color: var(--blue-text);
 }

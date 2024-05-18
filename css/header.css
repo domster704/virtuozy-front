@@ -1,24 +1,44 @@
-header {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2.5em 6.25em 1.25em 6.25em;
-
-    /*position: sticky;*/
-    /*top: 0;*/
-    /*z-index: 999;*/
-    /*background: white;*/
+/*Секция header*/
+.background_header_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
 }
 
-header button:not(.button) {
+header {
+    background-image: url("../assets/img/elements/header/header_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4.375em 0 1.25em 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header button:not(.button) {
     background: transparent;
 }
 
-header nav {
+.header nav {
     display: flex;
     align-items: center;
     gap: 2.12em;
+}
+
+.header nav .button {
+    text-align: center;
+    color: var(--text-button);
+}
+
+.header nav * {
+    color: var(--white);
 }
 
 .header_menu_burger {
@@ -27,17 +47,12 @@ header nav {
 
 .header_menu_burger .header_menu_burger_img {
     display: block;
-    background-image: url("../assets/img/menu_burger.svg");
+    background-image: url("../assets/img/elements/header/menu_burger.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     width: 1.5em;
     height: 1.25em;
-}
-
-.header_logo_block {
-    /*background: var(--main-color);;*/
-    /*padding: 0.625em;*/
 }
 
 .header_logo_block img {
@@ -48,3 +63,39 @@ header nav {
     width: var(--width);
     height: var(--height);
 }
+
+/*Конец секции header*/
+
+/*Секция top_about*/
+.top_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 40vw;
+}
+
+.top_about_left {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+}
+
+.top_about_left h1 {
+    font-weight: 500;
+    font-size: 3em;
+    color: var(--white);
+}
+
+.top_about_left p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.top_about_left .button {
+    display: block;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/*Конец секции top_about*/
