@@ -67,4 +67,20 @@ footer {
     width: 9.375em;
     height: auto;
 }
+
 /*Конец секции contacts*/
+
+/*Начало секции develop_by*/
+.develop_by {
+    padding: 0 0 1em 0;
+}
+
+.develop_by a {
+    color: var(--white);
+}
+
+.develop_by a:hover {
+    text-decoration: underline;
+}
+
+/*Конец секции develop_by*/

@@ -208,11 +208,14 @@
 
 .popup_close,
 .arrow {
+    --padding: 0.2em;
+
     position: absolute;
     z-index: 100002;
 
-    background-color: color-mix(in srgb, var(--main-color) 80%, rgba(0, 0, 0, 0));
+    background-color: var(--text-button);
     color: white;
+    border-radius: 50%;
 
     font-size: 2em;
     line-height: 100%;
@@ -220,22 +223,27 @@
 
     cursor: pointer;
     user-select: none;
-    padding: 0.125em;
+    padding: var(--padding);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    width: calc(1em + 2 * var(--padding));
 }
 
 .popup_close:hover,
 .arrow:hover {
-    background-color: color-mix(in srgb, var(--accent) 80%, rgba(0, 0, 0, 0.5));
+    background-color: color-mix(in srgb, var(--hover-blue-button) 80%, rgba(0, 0, 0, 0.5));
 }
 
 .arrow#arrow_left {
     top: 50%;
     left: 0.75em;
+    transform: rotate(90deg);
 }
 
 .arrow#arrow_right {
     top: 50%;
     right: 0.75em;
+    transform: rotate(-90deg);
 }
 
 .popup_close {
